@@ -21,7 +21,7 @@ describe('Add Contact', () => {
         })
 
     it('Returns error when validation fails', () => {
-        cy.get('#email').type('test@fake.com')
+        cy.get('#email').type('testbook@fake.com')
         cy.get('#password').type('foobarfoo')
         cy.get('#submit').click()
 
